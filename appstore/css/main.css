@@ -1,0 +1,438 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body{
+    font-family: Verdana, serif;
+    background: url("../img/bg.jpg") repeat-x;
+}
+
+#main-wrapper{
+    width: 850px;
+    height: 1090px;
+    margin: 0 auto;
+}
+
+/*==== START HEADER ====*/
+
+header{
+    height: 100px;
+}
+
+    #logo{
+       float: left;
+       position: relative;
+       width: 360px;
+       height: 100px;
+    }
+
+    #logo a{
+        text-decoration: none;
+    }
+
+    #logo a > span{
+        position: absolute;
+        top: 25px;
+        left: 0;
+        font-size: 30px;
+        font-weight: bold;
+        letter-spacing: -3px;
+        color: #6e6e6e;
+        text-transform: uppercase;
+    }
+
+    #menu-box{
+       position: relative;
+       float: right;
+       width: 490px;
+       height: 100px;
+    }
+
+    #top-menu{
+        position: absolute;
+        left: 12px;
+        top: 18px;
+        width: 482px;
+        height: 61px;
+        background: url("../img/nav_tab.png") no-repeat;
+    }
+
+    #top-menu > ul{
+        display: block;
+        margin: 0 auto;
+        list-style-type: none;
+    }
+
+    #top-menu ul > li {
+        float: left;
+        font-size: 12px;
+        font-weight: bold;
+        margin: 15px 5px 20px 5px;
+    }
+
+    li > a{
+        display: inline-block;
+        padding: 5px;
+        text-decoration: none;
+        color: #6e6e6e;
+    }
+
+    li > a:hover{
+        color: white;
+        background-color: #8f8f8f;
+        border-radius: 5px;
+        box-shadow: 2px 2px 2px #cccccc;
+    }
+
+/*==== END HEADER ====*/
+
+/*==== START CONTENT ====*/
+
+#content-wrapper{
+    height: 915px;
+}
+
+/*------ Section "Features" ------*/
+
+    #features{
+        clear: both;
+        position: relative;
+        width: 850px;
+        height: 535px;
+    }
+
+    #img{
+        position: absolute;
+        top: 0;
+        left: -47px;
+        width: 377px;
+        height: 561px;
+        background: url("../img/iphone_without_screen.png") no-repeat;
+        z-index: 999;
+    }
+
+    .screen-img{
+        position: absolute;
+        top: 92px;
+        left: 63px;
+        width: 224px;
+        height: 334px;
+        background: url("../img/iphone_screen.jpg") no-repeat;
+    }
+
+    #features-list{
+        float: right;
+        width: 470px; /*473px*/
+        height: 100%;
+    }
+
+    #features-list > article{
+        width: 455px;
+        height: 65px;
+        font-size: 12px;
+        word-wrap: break-word;
+        color: #767676;
+        margin-bottom: 20px;
+    }
+
+    #features-list > article > img{
+        float: left;
+        width: 65px;
+        height: 65px;
+        margin-right: 15px;
+    }
+
+    #features-list > article > h4{
+        margin-bottom: 0;
+    }
+
+    #features-list > article > p{
+        margin-top: 10px;
+    }
+
+    #features-list a{
+        display: inline-block;
+    }
+
+    #appstore-button{
+        position: absolute;
+        right: 0;
+        bottom: 30px;
+        width: 250px;
+        height: 117px;
+        background: url("../img/appstore_button.png") no-repeat;
+    }
+
+/*------ Section "About" ------*/
+
+    #about{
+        clear: both;
+        width: 850px;
+        height: 190px;
+    }
+
+    #main-article{
+        width: 850px;
+        height: 30px;
+    }
+
+    #main-article span{
+        float: left;
+        font-size: 27px;
+        letter-spacing: -2px;
+        color: #6e6e6e;
+    }
+
+    #divider{
+        float: right;
+        width: 670px;
+        height: 30px;
+        margin-top: 20px;
+        background: url("../img/appstore_right_line.png") repeat-x;
+    }
+
+    .article-content{
+        float: left;
+        width: 95%;
+        font-size: 12px;
+        word-wrap: break-word;
+        color: #767676;
+    }
+
+/*------ Section "Mini-gallery" ------*/
+
+    #mini-gallery{
+        clear: both;
+        width: 850px;
+        height: 148px;
+        margin-top: 5px;
+    }
+
+    .img-outer-block{
+        position: relative;
+        float: left;
+        width: 146px;
+        height: 146px;
+        background-color: white;
+        border: 1px solid #b8b8b8;
+        margin-right: 26px;
+    }
+
+    .img-outer-block:last-child{
+        margin-right: 0;
+    }
+
+    .gallary-img{
+        position: absolute;
+        top: 8px;
+        left: 9px;
+        width: 127px;
+        height: 127px;
+        background: url("../img/image_example.jpg") no-repeat;
+    }
+
+/*==== END CONTENT ====*/
+
+/*==== START FOOTER ====*/
+footer{
+    width: 850px;
+    height: 75px;
+}
+
+    #bottom-line{
+        clear: both;
+        height: 2px;
+        padding-bottom: 20px;
+        background: url("../img/footer_divider.png") no-repeat;
+        margin: 0 auto;
+    }
+
+    footer > p{
+        margin: 0 auto;
+        font-size: 12px;
+        text-align: center;
+    }
+
+
+/*==== END FOOTER ====*/
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
